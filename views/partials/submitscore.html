@@ -1,0 +1,14 @@
+<div class="starter-template">
+	<h1>You Scored {{score.score}}</h1>
+
+	<form novalidate name="submit_score"  class="default-form" ng-submit="submit_score.$valid && submit(score)">
+		<label for="name">Enter your name:</label>
+		 <input class="form-control field name" id="name" name="name" type="text" ng-model="score.name" required>
+		  <p class="alert-error" ng-if="submit_score.name.$invalid">
+            Please enter a name
+          </p>
+		 <button type="submit" class="btn btn-primary btn-large" ng-class="{'button-processing': state.processing}" ng-disabled="state.processing">
+          <span>Submit</span>
+        </button>
+	</form>
+</div>

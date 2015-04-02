@@ -1,0 +1,11 @@
+<div class="starter-template">
+	<h1>{{round.question}}</h1>
+
+	<a class="btn btn-default" ng-click="answer(round.choices[0])">{{round.choices[0]}}</a>
+	<a class="btn btn-default" ng-click="answer(round.choices[1])">{{round.choices[1]}}</a>
+	<a class="btn btn-default" ng-click="answer(round.choices[2])">{{round.choices[2]}}</a>
+
+	<div>{{score}}</div>
+
+	<timer interval="interval" ></timer>
+</div>

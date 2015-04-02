@@ -1,0 +1,10 @@
+*.sublime-project
+*.sublime-workspace
+.idea/
+.DS_Store
+.tmp/
+dist/
+public/bower_components/
+node_modules/
+test/coverage
+test/test-results.xml
